@@ -1,7 +1,7 @@
 import sqlite3
 
 def init_db():
-    conn = sqlite3.connect("lifehub.db")
+    conn = sqlite3.connect("/tmp/lifehub.db")
     cursor = conn.cursor()
 
     # -------- USERS TABLE --------
