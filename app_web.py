@@ -2,6 +2,12 @@ from flask import Flask, render_template, request, redirect, session, url_for, f
 import sqlite3
 from datetime import date, timedelta
 from werkzeug.security import generate_password_hash, check_password_hash
+# ✅ ADD THIS BLOCK
+try:
+    from database import init_db
+    init_db()
+except Exception as e:
+    print("DB INIT ERROR:", e)
 from database import init_db
 # from database import init_db
 app = Flask(__name__)
