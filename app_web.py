@@ -47,7 +47,7 @@ def login():
         else:
             flash("Invalid username or password ❌")
 
-    return "Login Page Working"
+    return render_template("login.html")
 
 
 # -------- REGISTER --------
