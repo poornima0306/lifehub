@@ -13,7 +13,7 @@ init_db()
 
 # -------- DB CONNECTION --------
 def get_db():
-    conn = sqlite3.connect("lifehub.db")
+    conn = sqlite3.connect("/tmp/lifehub.db")  # IMPORTANT
     conn.row_factory = sqlite3.Row
     return conn
 
