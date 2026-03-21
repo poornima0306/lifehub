@@ -3,11 +3,11 @@ import sqlite3
 from datetime import date, timedelta
 from werkzeug.security import generate_password_hash, check_password_hash
 from database import init_db
-
+# from database import init_db
 app = Flask(__name__)
 app.secret_key = "lifehub_secret"
-
 # Initialize DB
+# init_db()
 init_db()
 
 
